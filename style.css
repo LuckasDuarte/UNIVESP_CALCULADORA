@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #d2c5c4;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.title p {
+  font-size: 25px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  /* Esconder as setas de incremento e decremento */
+}
+.form-container p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.form-container input {
+  outline: none;
+  text-align: center;
+  border: none;
+  width: 80%;
+  margin: 10px 15px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form-container input[type=number]::-webkit-inner-spin-button,
+.form-container input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-container input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.form-container button {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  background-color: #ba3c3d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8f1717;
+  transition: 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container input {
+    width: 80%;
+  }
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #ddd4d3;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
