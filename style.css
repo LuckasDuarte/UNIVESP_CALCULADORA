@@ -78,6 +78,9 @@ button:hover {
   .form-container input {
     width: 80%;
   }
+  .form-container p {
+    font-size: 1.1rem;
+  }
 }
 
 .container {
