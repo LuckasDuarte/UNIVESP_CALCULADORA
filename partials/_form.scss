@@ -47,7 +47,7 @@
 $medium: 768px;
 
 button:hover {
-    background-color: $red_recondary;
+    background-color: $red_secondary;
     transition: 0.8s;
 }
 .form-container {
@@ -57,4 +57,22 @@ button:hover {
         }
     }
 
+}
+
+// creditos
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.container a{
+    margin-top: 2rem;
+    font-size: 5rem;
+    color: $red_primary;
+}
+
+.container a:hover{
+    transition: .5s;
+    color: $red_secondary;
 }
