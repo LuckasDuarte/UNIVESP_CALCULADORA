@@ -9,7 +9,21 @@ document.getElementById("btn_calcular").addEventListener("click", function() {
     // verifica Aprovado ou reprovado
     var status = (MF >= 5) ? "APROVADO" : "REPROVADO";
 
-    alert(`SUA NOTA FOI: ${MF.toFixed(1)} PORTANTO VOCÊ FOI ${status}`)
+    var color = (MF >= 5) ? "#00a500" : "#ef4444"
+
+    // alert(`SUA NOTA FOI: ${MF.toFixed(1)} PORTANTO VOCÊ FOI ${status}`)
+    Toastify({
+        text: `SUA NOTA FOI: ${MF.toFixed(1)} PORTANTO VOCÊ FOI ${status}`,
+        duration: 4000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background:`${color}`,
+            
+        },
+      }).showToast();
 
     var AVA = document.getElementById("nota_AVA").value = "";
     var PROVA = document.getElementById("nota_PROVA").value = "";
